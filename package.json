@@ -1,0 +1,20 @@
+{
+  "name": "library-wda-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alan <Alanpereira2@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -r dotenv/config index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.7.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}

@@ -29,5 +29,11 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Book',
   });
+
+  Book.associate = function (models) {
+    Book.belongsTo(models.publisher, {
+      onDelete: "cascade",
+    });
+  };
   return Book;
 };

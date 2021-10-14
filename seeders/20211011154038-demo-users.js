@@ -1,4 +1,5 @@
 'use strict';
+const moment = require('moment')
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -17,32 +18,32 @@ module.exports = {
         address: "Rua A, 190",
         city: "Fortaleza",
         email: "joão@bol",
-        createdAt: new Date(),
-        updatedAt: new Date()
+        createdAt: moment().format('YYYY-MM-DD HH:MM:SS'),
+        updatedAt: moment().format('YYYY-MM-DD HH:MM:SS')
       },
       {
         user_name: "Marcelo Silva",
         address: "Av. B, 1200",
         city: "Fortaleza",
         email: "ms@gmail",
-        createdAt: new Date(),
-        updatedAt: new Date()
+        createdAt: moment().format('YYYY-MM-DD HH:MM:SS'),
+        updatedAt: moment().format('YYYY-MM-DD HH:MM:SS')
       },
       {
         user_name: "Carlos Aguiar",
         address: "Rua C, 87",
         city: "Fortaleza",
         email: "aguiar@ig",
-        createdAt: new Date(),
-        updatedAt: new Date()
+        createdAt: moment().format('YYYY-MM-DD HH:MM:SS'),
+        updatedAt: moment().format('YYYY-MM-DD HH:MM:SS')
       },
       {
         user_name: "Roberta Porto",
         address: "Rua D, 120",
         city: "Recife",
         email: "rporto@bol",
-        createdAt: new Date(),
-        updatedAt: new Date()
+        createdAt: moment().format('YYYY-MM-DD HH:MM:SS'),
+        updatedAt: moment().format('YYYY-MM-DD HH:MM:SS')
       },
     ]);
   },

@@ -20,9 +20,7 @@ module.exports = {
       publisher: {
         type: Sequelize.INTEGER,
         references: {
-          model: {
-            tableName: 'Publishers',
-          },
+          model: 'Publishers',
           key: 'id',
         },
       },
